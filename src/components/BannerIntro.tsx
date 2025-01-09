@@ -11,7 +11,7 @@ export default function BannerIntro() {
         <section className="relative w-full max-h-screen">
             <div className="relative w-full h-full flex justify-center items-center overflow-x-hidden">
                 <video
-                    className="w-full h-[80vh] object-cover object-top min-w-[1024px] z-10 relative"
+                    className="w-full max-h-screen object-cover object-top min-w-[1024px] z-10 relative"
                     playsInline
                     autoPlay
                     muted
@@ -56,7 +56,7 @@ export default function BannerIntro() {
                 height={540}
                 priority
                 style={{
-                    bottom: "0",
+                    bottom: 150,
                     transform: "translate(-50%, 50%)"
                 }}
             />

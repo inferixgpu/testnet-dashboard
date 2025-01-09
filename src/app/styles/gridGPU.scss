@@ -1,5 +1,5 @@
 .gpu-container {
-  @apply flex justify-center items-center bg-black w-full h-full;
+  @apply flex justify-center items-center bg-black w-full h-full relative -mt-[150px];
   .gpu-grid {
     @apply flex justify-center items-center
     relative z-40 w-full max-w-[1029px] h-[404px]
