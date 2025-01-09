@@ -2,6 +2,7 @@
 import {QueryClientProvider, QueryClient} from '@tanstack/react-query';
 import BannerIntro from "@/components/BannerIntro";
 import Footer from "@/components/Footer";
+import GridGPU from "@/components/GridGPU";
 
 export default function Home() {
     const queryClient = new QueryClient({
@@ -14,6 +15,7 @@ export default function Home() {
     return (
         <QueryClientProvider client={queryClient}>
             <BannerIntro/>
+            <GridGPU/>
             <Footer/>
         </QueryClientProvider>
     );

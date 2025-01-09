@@ -1,0 +1,9 @@
+.gpu-container {
+  @apply flex justify-center items-center bg-black w-full h-full;
+  .gpu-grid {
+    @apply flex justify-center items-center
+    relative z-40 w-full max-w-[1029px] h-[404px]
+    rounded-[16px] border-solid border-[0.67px] border-[#FFFFFF1A] p-2 max-md:p-2.5;
+    box-shadow: 0 0 0 6px #FFFFFF08 inset;
+  }
+}
