@@ -2,7 +2,7 @@ import gpuCard from "@/../public/assets/images/card-bg.png";
 import gpuCard2 from "@/../public/assets/images/card-bg-2.png";
 import "@/app/styles/GPUCard.scss";
 import Image from "next/image";
-import {useState} from "react";
+import CountUp from "react-countup";
 
 interface dataProps {
     brand: string;
@@ -42,15 +42,28 @@ const GPUCard = ({ data, totalHashRate, index }: GPUCardProps) => {
                 <div className={'statics'}>
                     <div className={"p"}>
                         <span>Quantity</span>
-                        <span>{data.quantity}</span>
+                        <span>
+                            <CountUp start={0} end={data.quantity} duration={1}/>
+                        </span>
                     </div>
                     <div className={"p"}>
                         <span>Staking</span>
-                        <span>{data.staking}</span>
+                        <span>
+                            <CountUp start={0} end={data.staking} duration={1}/>
+                        </span>
                     </div>
                     <div className={"p"}>
                         <span>30 days ROI</span>
-                        <span>{dataROI().toFixed(2)}%</span>
+                        <span>
+                            <CountUp
+                                start={0}
+                                end={Number(dataROI().toFixed(2))}
+                                duration={1}
+                                decimals={2}
+                                decimal="."
+                            />
+                            %
+                        </span>
                     </div>
                 </div>
             </div>
