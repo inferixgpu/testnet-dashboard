@@ -43,6 +43,12 @@ export default function TotalLeft() {
             fontSize: "14px",
             fontFamily: "Inter, sans-serif",
           }}
+          width="160px"
+          height="50px"
+          backgroundColor="black"
+          hoverBackgroundColor="#7EFFB2CF" 
+          hoverTextColor="black" 
+          textColor="#FFFFFF"
         />
       </div>
     </div>
