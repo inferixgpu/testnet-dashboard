@@ -1,12 +1,8 @@
 'use client';
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import TotalTestnet from "@/components/total/TotalTesnet";
 
 export default function BannerIntro() {
-    const router = useRouter();
-    const handleClick = () => {
-        router.push("/mvp")
-    };
     return (
         <section className="relative w-full max-h-screen">
             <div className="relative w-full h-full flex justify-center items-center overflow-x-hidden">
@@ -73,6 +69,7 @@ export default function BannerIntro() {
                     bottom: "0px",
                 }}
             />
+            <TotalTestnet/>
         </section>
     );
 }
