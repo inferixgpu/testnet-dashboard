@@ -48,7 +48,7 @@ const GridGPU = () => {
     ];
     const totalHashRate = data.reduce((total, item) => total + item.staking * item.ib, 0);
     const [isShowMore, setIsShowMore] = useState(false);
-    const [dataPublic, setDataPublic] = useState([...data]);
+    const [dataPublic, setDataPublic] = useState([...data.slice(0,3)]);
 
     useEffect(() => {
         if (isShowMore) {
