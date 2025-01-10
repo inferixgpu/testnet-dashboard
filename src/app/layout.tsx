@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -12,7 +12,6 @@ const geistMono = localFont({
     variable: "--font-geist-mono",
     weight: "100 900",
 });
-
 export const metadata: Metadata = {
     title: "Inferix",
     description: "Decentralized GPU infrastructure for Visual Computing and AI",
@@ -31,17 +30,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    return (
+        <html lang="en">
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
         {children}
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }

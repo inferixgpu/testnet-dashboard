@@ -1,9 +1,33 @@
 .gpu-container {
-  @apply flex justify-center items-center bg-black w-full h-full relative -mt-[150px];
+  @apply flex flex-col gap-5 justify-center items-center bg-black w-full h-full relative -mt-[150px];
   .gpu-grid {
-    @apply flex justify-center items-center
-    relative z-40 w-full max-w-[1029px] h-[404px]
-    rounded-[16px] border-solid border-[0.67px] border-[#FFFFFF1A] p-2 max-md:p-2.5;
+    @apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-2 justify-start items-center overflow-hidden
+    relative z-40 w-auto
+    rounded-[16px] border-solid border-[0.67px] border-[#FFFFFF1A] p-4 max-md:p-2.5;
+    transition: max-height 10s ease;
     box-shadow: 0 0 0 6px #FFFFFF08 inset;
+  }
+
+  .showmore {
+    @apply relative flex justify-center items-center w-full z-40 max-w-[1029px];
+    span {
+      @apply w-full absolute z-10;
+      border-top: 1px solid rgba(35, 36, 36, 1)
+    }
+    button {
+      @apply h-[36px] w-[130px] rounded-[40px] text-center cursor-pointer z-20 bg-black;
+      border: 1px solid rgba(35, 36, 36, 1);
+      color: rgba(157, 157, 157, 1);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    button:hover {
+      background: rgba(1, 202, 170, 1);
+      color: black;
+    }
   }
 }
