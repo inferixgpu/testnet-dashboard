@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100 900;
+}
+
+.gpu-card {
+  @apply relative w-[328.66px] h-[444px] rounded-[8px] overflow-hidden;
+  background: rgba(118, 118, 118, 0.16);
+  backdrop-filter: blur(100px);
+  box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
+  img {
+    @apply absolute object-contain top-0 w-full h-full z-10;
+  }
+  .info {
+    @apply relative w-full h-full flex flex-col justify-center items-center z-20;
+    .name {
+      @apply basis-1/2 w-full items-center justify-center flex flex-col pt-[50px];
+      span:first-child {
+        font-family: Rubik, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 8.85%, #FFFFFF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      span:last-child {
+        font-family: Rubik, sans-serif;
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        text-shadow:
+                0px 0px 3px rgba(175, 255, 230, 1),
+                0px 0px 3px rgba(175, 255, 230, 1),
+                0px 0px 3px rgba(175, 255, 230, 1),
+                0px 0px 3px rgba(175, 255, 230, 1);
+      }
+    }
+    .statics {
+      @apply w-full basis-1/2 flex flex-col items-center justify-end max-w-[265px] pb-[30px];
+      .p {
+        @apply w-full justify-between flex h-[40px] items-end;
+        font-family: Inter, sans-serif;
+        span:first-child {
+          color: rgba(157, 157, 157, 1);
+        }
+        span:last-child {
+          color: rgba(248, 248, 248, 0.95);
+        }
+      }
+    }
+  }
+}
