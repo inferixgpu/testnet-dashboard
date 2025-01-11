@@ -7,7 +7,7 @@ export default function BannerIntro() {
         <section className="relative w-full max-h-screen">
             <div className="relative w-full h-full flex justify-center items-center overflow-x-hidden">
                 <video
-                    className="w-full max-h-screen object-cover object-top min-w-[1024px] z-10 relative"
+                    className="w-full max-sm:h-[900px] sm:h-[712px] max-h-screen object-cover object-top min-w-[1024px] z-10 relative"
                     playsInline
                     autoPlay
                     muted
@@ -17,6 +17,22 @@ export default function BannerIntro() {
                 >
                     <source
                         src="/assets/videos/output_h264.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+
+            <div className="relative w-full h-full flex justify-center items-center overflow-x-hidden brightness-[46%]"
+            >
+                <video
+                    className="w-full max-sm:h-[900px] sm:h-[712px] max-h-screen object-cover object-top min-w-[1024px] z-10 relative"
+                    playsInline
+                    autoPlay
+                    muted
+                    loop
+                >
+                    <source
+                       src="/assets/videos/output_h264.mp4"
                         type="video/mp4"
                     />
                 </video>

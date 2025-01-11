@@ -14,7 +14,7 @@ export default function TotalLeft() {
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
           }}
-          className="font-normal text-center flex text-transparent text-[40px]"
+          className="font-normal text-center flex text-transparent text-[40px] justify-center lg:justify-start"
         >
           Inferix GPU network
         </div>
@@ -34,7 +34,7 @@ export default function TotalLeft() {
           <p className="text-[40px] text-white">is live on IoTeX</p>
         </div>
       </div>
-      <div>
+      <div className="flex justify-center lg:justify-start">
         <ButtonCustom
           content={"Join our discord"}
           onClick={handleClick}
