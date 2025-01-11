@@ -26,7 +26,7 @@ const GPUCard = ({ data, totalHashRate, index }: GPUCardProps) => {
             return 0;
         }
         const dailyReward = (data.ib / totalHashRate) * 625000;
-        const rs = ((data.ifx + (dailyReward * 30)) * 0.1) / (data.ifx * 0.05);
+        const rs = ((data.ifx + (dailyReward * 30)) * 0.1) / (data.ifx * 0.05)*100;
         return rs;
     }
 
