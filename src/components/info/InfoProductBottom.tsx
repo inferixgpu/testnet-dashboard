@@ -18,8 +18,8 @@ export default function InfoProductBottom() {
       };
   return (
    
-      <div className="flex gap-[8px]">
-        <div className="w-[100%] lg:w-[497px] h-[356px] sm:h-[356px] items-center bg-[#76767629] backdrop-blur-[58px] flex flex-col sm:flex-row lg:justify-start justify-center rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)]">
+      <div className="gap-[8px] flex flex-col lg:flex-row">
+        <div className="w-[100%] lg:w-[497px] justify-around h-[356px] sm:h-[356px] items-center bg-[#76767629] backdrop-blur-[58px] flex lg:justify-start  rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)]">
           <Image
             className="object-contain"
             src="/assets/images/education.png"
@@ -28,7 +28,7 @@ export default function InfoProductBottom() {
             height={356}
             priority
           />
-          <div className="h-[152px] absolute mt-[-55px] w-[159px] items-center sm:mt-[0] justify-start sm:justify-between top-[270px] sm:top-[108px] sm:left-[315px] flex flex-col lg:items-start text-center sm:text-left gap-[24px]">
+          <div className="h-[152px] ml-[-80px] mt-[-55px] w-[159px] items-center sm:mt-[0] justify-start sm:justify-between top-[270px] sm:top-[108px] sm:left-[315px] flex flex-col lg:items-start text-center sm:text-left gap-[24px]">
             <span className="text-[#F8F8F8F2] font-medium text-[14px] text-center sm:text-[18px] cursor-default">
               GPU Mining Registration Port
             </span>
@@ -67,7 +67,7 @@ export default function InfoProductBottom() {
           </div>
         </div>
 
-        <div className="w-[100%] lg:w-[497px] h-[356px] sm:h-[356px] items-center bg-[#76767629] backdrop-blur-[58px] flex flex-col sm:flex-row lg:justify-start justify-center rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)]">
+        <div className="w-[100%] lg:w-[497px] h-[356px] sm:h-[356px] justify-around items-center bg-[#76767629] backdrop-blur-[58px] flex lg:justify-start rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)]">
           <Image
             className="object-contain"
             src="/assets/images/commands.png"
@@ -76,7 +76,7 @@ export default function InfoProductBottom() {
             height={356}
             priority
           />
-          <div className="h-[152px] absolute mt-[-55px] w-[159px] items-center sm:mt-[0] justify-start sm:justify-between top-[270px] sm:top-[108px] sm:left-[315px] flex flex-col lg:items-start text-center sm:text-left gap-[24px]">
+          <div className="h-[152px] ml-[-80px] mt-[-55px] w-[159px] items-center sm:mt-[0] justify-start sm:justify-between top-[270px] sm:top-[108px] sm:left-[315px] flex flex-col lg:items-start text-center sm:text-left gap-[24px]">
             <span className="text-[#F8F8F8F2] font-medium text-[14px] text-center sm:text-[18px] cursor-default">
               GPU Mining Registration Port
             </span>

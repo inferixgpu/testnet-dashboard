@@ -9,12 +9,7 @@
       @apply relative flex flex-col max-lg:flex-col w-full h-full max-w-[1009px] gap-[8px] rounded-[8px] items-center;
       backdrop-filter: blur(100px);
       box-shadow: 2px 4px 16px 0 #F8F8F80F inset;
-      // img:nth-child(1) {
-      //   @apply absolute left-0 max-md:hidden;
-      // }
-      // img:nth-child(2) {
-      //   @apply absolute md:hidden w-full h-full top-0 object-top object-contain z-10;
-      // }
+
       form {
         @apply flex flex-col items-center justify-center max-md:justify-end w-full lg:max-w-[528px] md:max-w-[50%] h-full p-4 gap-6 z-20;
         .text-content {
