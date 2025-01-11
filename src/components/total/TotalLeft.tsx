@@ -14,7 +14,7 @@ export default function TotalLeft() {
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
           }}
-          className="font-normal text-center flex text-transparent text-[40px] justify-center lg:justify-start"
+          className="font-normal text-center flex text-transparent sm:text-[40px] text-[30px] justify-center lg:justify-start"
         >
           Inferix GPU network
         </div>
@@ -27,11 +27,11 @@ export default function TotalLeft() {
               backgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
-            className="flex text-[40px]"
+            className="flex sm:text-[40px] text-[30px]"
           >
             Testnet
           </p>
-          <p className="text-[40px] text-white">is live on IoTeX</p>
+          <p className="sm:text-[40px] text-[30px] text-white">is live on IoTeX</p>
         </div>
       </div>
       <div className="flex justify-center lg:justify-start">
