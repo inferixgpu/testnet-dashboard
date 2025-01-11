@@ -52,7 +52,7 @@ export default function BannerIntro() {
                 height={540}
                 priority
                 style={{
-                    bottom: 150,
+                    bottom: 190,
                     transform: "translate(-50%, 50%)"
                 }}
             />
