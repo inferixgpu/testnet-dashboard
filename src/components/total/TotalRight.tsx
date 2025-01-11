@@ -1,7 +1,9 @@
 import Image from "next/image";
 import CountUp from "react-countup";
+import gpuData from "@/components/common/DataGPU"
 
 export default function TotalRight() {
+  const totalHashRate = gpuData.reduce((total, item) => total + item.staking * item.ib, 0);
   return (
     <div className="w-[337px] h-[285px] bg-[#76767629] backdrop-blur-[58px] flex justify-center items-center rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)] relative">
       <Image
@@ -35,7 +37,7 @@ export default function TotalRight() {
         >
           <CountUp
             start={0}
-            end={123.45}
+            end={totalHashRate}
             duration={1}
             decimals={2}
             decimal="."

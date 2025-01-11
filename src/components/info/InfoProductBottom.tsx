@@ -2,6 +2,7 @@ import Image from "next/image";
 import "@/app/styles/infoProduct.scss";
 import ButtonCustom from "@/components/common/ButtonCustom";
 
+
 export default function InfoProductBottom() {
     const handleClickRegister = () => {
         window.open("https://cloud.inferix.io/", "_blank");
