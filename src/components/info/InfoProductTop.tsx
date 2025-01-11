@@ -2,6 +2,7 @@ import Image from "next/image";
 import "@/app/styles/infoProduct.scss";
 import ButtonCustom from "@/components/common/ButtonCustom";
 
+
 export default function InfoProductTop() {
   const handleClick = () => {
     window.open("https://docs.inferix.io/inferix-testnet-1/guide-to-participate-in-the-staking-and-mining-program", "_blank");
