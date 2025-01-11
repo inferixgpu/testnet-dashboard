@@ -55,7 +55,7 @@ const Footer = () => {
               height={32}
             />
             <span
-              style={{ fontFamily: "Inter" }}
+              style={{ fontFamily: "Inter, sans-serif" }}
               className="text-white font-medium text-[16px] leading-[24px] cursor-default"
             >
               Decentralized GPU Network
@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="flex items-center">
           <div
-            style={{ fontFamily: "Inter" }}
+            style={{ fontFamily: "Inter, sans-serif" }}
             className="w-full max-w-[1036px] px-5 mt-[30px] items-center flex sm:flex-row flex-col-reverse justify-between p-5 border-t border-[#FFFFFF33] text-[14px] font-normal leading-[24px] text-white gap-[10px]"
           >
             <div>
@@ -101,7 +101,7 @@ const Footer = () => {
                 href="https://docs.inferix.io/terms-of-service/airdrop-terms-of-service"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ fontFamily: "Inter" }}
+                style={{ fontFamily: "Inter, sans-serif" }}
                 className="text-white text-[14px] font-normal leading-[24px] cursor-pointer"
               >
                 Terms and Conditions
@@ -111,7 +111,7 @@ const Footer = () => {
                 href="https://docs.inferix.io/terms-of-service/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ fontFamily: "Inter" }}
+                style={{ fontFamily: "Inter, sans-serif" }}
                 className="text-white text-[14px] font-normal leading-[24px] cursor-pointer order-1 sm:order-2"
               >
                 Privacy Policy
