@@ -1,7 +1,6 @@
 import "@/app/styles/gridGPU.scss";
 import GPUCard from "@/components/GPUCard";
 import {useEffect, useState} from "react";
-import {set} from "immutable";
 
 const GridGPU = () => {
     const data = [
