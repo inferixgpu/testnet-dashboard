@@ -22,22 +22,6 @@ export default function BannerIntro() {
                 </video>
             </div>
 
-            <div className="relative w-full h-full flex justify-center items-center overflow-x-hidden brightness-[46%]"
-            >
-                <video
-                    className="w-full max-sm:h-[900px] sm:h-[712px] max-h-screen object-cover object-top min-w-[1024px] z-10 relative"
-                    playsInline
-                    autoPlay
-                    muted
-                    loop
-                >
-                    <source
-                       src="/assets/videos/output_h264.mp4"
-                        type="video/mp4"
-                    />
-                </video>
-            </div>
-
             <div className="absolute w-full flex flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 items-center">
             </div>
 
