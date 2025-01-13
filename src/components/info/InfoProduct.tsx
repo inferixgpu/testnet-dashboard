@@ -15,15 +15,14 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 1000);
     };
-    
     window.addEventListener("resize", handleResize);
-    handleResize(); 
+    handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   if (isSmallScreen) {
     return (
-      <div className={"product"}>
+      <div className={"product"} style={{ overflowX: "hidden" }}>
         <div className={"product-container"}>
           <InfoProductBottom />
           <InfoProductTop />
@@ -33,18 +32,20 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
   }
 
   return (
-    <div className={"product"}>
+    <div className={"product"} style={{ overflowX: "hidden" }}>
       <div className={"product-container"}>
         <motion.div
+          style={{ overflow: "hidden", width: "100%" }}
           initial={{ x: "-100%", opacity: 0 }}
-          animate={isInViewport ? { x: 0, opacity: 1, width: "100%"  } : { x: "-100%", opacity: 0 }}
+          animate={isInViewport ? { x: 0, opacity: 1 } : { x: "-100%", opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
           <InfoProductBottom />
         </motion.div>
         <motion.div
+          style={{ overflow: "hidden", width: "100%" }}
           initial={{ x: "100%", opacity: 0 }}
-          animate={isInViewport ? { x: 0, opacity: 1, width: "100%"  } : { x: "100%", opacity: 0 }}
+          animate={isInViewport ? { x: 0, opacity: 1 } : { x: "100%", opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
           <InfoProductTop />

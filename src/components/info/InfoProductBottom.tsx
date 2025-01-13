@@ -18,10 +18,10 @@ export default function InfoProductBottom() {
       };
   return (
    
-      <div className="gap-[8px] flex flex-col lg:flex-row">
+      <div className="gap-[8px] w-[100%] flex flex-col lg:flex-row">
         <div className="w-[100%] lg:w-[497px] justify-around h-[356px] sm:h-[356px] items-center bg-[#76767629] backdrop-blur-[58px] flex lg:justify-start  rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)]">
           <Image
-            className="object-contain"
+            className="object-contain image-responsive"
             src="/assets/images/education.png"
             alt="education"
             width={400}
@@ -69,7 +69,7 @@ export default function InfoProductBottom() {
 
         <div className="w-[100%] lg:w-[497px] h-[356px] sm:h-[356px] justify-around items-center bg-[#76767629] backdrop-blur-[58px] flex lg:justify-start rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)]">
           <Image
-            className="object-contain"
+            className="object-contain image-responsive"
             src="/assets/images/commands.png"
             alt="commands"
             width={400}

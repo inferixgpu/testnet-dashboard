@@ -11,7 +11,7 @@ export default function InfoProductTop() {
     
       <div className="w-[100%] lg:w-[1002px] h-[600px] sm:h-[356px] flex flex-col sm:flex-row items-center bg-[#76767629] backdrop-blur-[58px] rounded-[8px] border-b-[2px] sm:border-[0px] border-[#25272670] sm:shadow-none shadow-[inset_2px_4px_16px_2px_rgba(248,248,248,0.06)] justify-evenly">
         <Image
-          className="object-contain"
+          className="object-contain "
           src="/assets/images/sentiment.png"
           alt="sentiment"
           width={300}

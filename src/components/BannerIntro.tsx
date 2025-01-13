@@ -41,7 +41,7 @@ export default function BannerIntro() {
             <div className="absolute w-full flex flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 items-center">
             </div>
 
-            <Image
+            {/* <Image
                 className="absolute top-0 left-0 w-full h-full z-0"
                 src="/assets/images/filter_bg.svg"
                 alt=""
@@ -49,7 +49,7 @@ export default function BannerIntro() {
                 height={0}
                 priority
                 style={{ objectFit: "cover" }}
-            />
+            /> */}
             <Image
                 className="absolute top-0 left-0 w-full h-full z-[20]"
                 src="/assets/images/bright_pants.svg"
