@@ -38,7 +38,7 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
           style={{ overflow: "hidden", width: "100%" }}
           initial={{ x: "-100%", opacity: 0 }}
           animate={isInViewport ? { x: 0, opacity: 1 } : { x: "-100%", opacity: 0 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <InfoProductBottom />
         </motion.div>
@@ -46,7 +46,7 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
           style={{ overflow: "hidden", width: "100%" }}
           initial={{ x: "100%", opacity: 0 }}
           animate={isInViewport ? { x: 0, opacity: 1 } : { x: "100%", opacity: 0 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <InfoProductTop />
         </motion.div>
