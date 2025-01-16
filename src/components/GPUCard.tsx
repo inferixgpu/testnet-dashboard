@@ -33,7 +33,9 @@ const GPUCard = ({ data, totalHashRate, index }: GPUCardProps) => {
 
     return (
         <div className={'gpu-card'}>
-            <Image src={index !== 1 ? gpuCard : gpuCard2} alt={'gpuCard'}/>
+            <Image className={"max-lg:hidden"} src={index !== 1 ? gpuCard : gpuCard2} alt={'gpuCard'}/>
+            <Image className={"max-md:hidden lg:hidden"} src={index === 1 || index === 0 ? gpuCard2 : gpuCard} alt={'gpuCard'}/>
+            <Image className={"md:hidden"} src={index !== 0 ? gpuCard : gpuCard2} alt={'gpuCard'}/>
             <div className={'info'}>
                 <div className={'name'}>
                     <span>{data.brand}</span>
