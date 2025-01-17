@@ -25,15 +25,6 @@ export default function BannerIntro() {
             <div className="absolute w-full flex flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 items-center">
             </div>
 
-            {/* <Image
-                className="absolute top-0 left-0 w-full h-full z-0"
-                src="/assets/images/filter_bg.svg"
-                alt=""
-                width={0}
-                height={0}
-                priority
-                style={{ objectFit: "cover" }}
-            /> */}
             <Image
                 className="absolute top-0 left-0 w-full h-full z-[20]"
                 src="/assets/images/bright_pants.svg"
@@ -45,14 +36,13 @@ export default function BannerIntro() {
             />
 
             <Image
-                className="absolute left-1/2 transform -translate-x-1/2 z-[21]"
+                className="absolute left-1/2 transform -translate-x-1/2 z-[21] bottom-[190px]"
                 src="/assets/images/galaxy.svg"
                 alt=""
                 width={960}
                 height={540}
                 priority
                 style={{
-                    bottom: 190,
                     transform: "translate(-50%, 50%)"
                 }}
             />
