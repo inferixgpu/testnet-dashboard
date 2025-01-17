@@ -22,7 +22,7 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
 
   if (isSmallScreen) {
     return (
-      <div className={"product"} style={{ overflowX: "hidden" }}>
+      <div className={"product"} style={{ overflow: "hidden" }}>
         <div className={"product-container"}>
           <InfoProductBottom />
           <InfoProductTop />
@@ -32,7 +32,7 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
   }
 
   return (
-    <div className={"product"} style={{ overflowX: "hidden" }}>
+    <div className={"product"} style={{ overflow: "hidden" }}>
       <div className={"product-container"}>
         <motion.div
           style={{ overflow: "hidden", width: "100%" }}
