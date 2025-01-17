@@ -36,7 +36,7 @@ export default function BannerIntro() {
             />
 
             <Image
-                className="absolute left-1/2 transform -translate-x-1/2 z-[21] bottom-[190px]"
+                className="absolute left-1/2 transform -translate-x-1/2 z-[21] lg:bottom-[190px] bottom-[100px]"
                 src="/assets/images/galaxy.svg"
                 alt=""
                 width={960}
