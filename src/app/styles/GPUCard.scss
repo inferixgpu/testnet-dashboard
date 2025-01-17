@@ -6,10 +6,11 @@
 }
 
 .gpu-card {
-  @apply relative w-[328.66px] h-[444px] rounded-[8px] overflow-hidden;
+  @apply relative w-[328.66px] max-h-0 rounded-[8px] overflow-hidden;
   background: rgba(118, 118, 118, 0.16);
   backdrop-filter: blur(100px);
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
+  animation: slideHeight 0.5s ease-out forwards;
   img {
     @apply absolute object-contain top-0 w-full h-full z-10;
   }
@@ -54,5 +55,14 @@
         }
       }
     }
+  }
+}
+@keyframes slideHeight {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 444px;
+    height: 444px;
   }
 }

@@ -4,7 +4,7 @@ import TotalTestnet from "@/components/total/TotalTesnet";
 
 export default function BannerIntro() {
     return (
-        <section className="relative w-full max-h-screen">
+        <section className="relative w-full min-h-[770px]">
             <div className="relative w-full h-full flex justify-center items-center overflow-x-hidden">
                 <video
                     className="w-full max-sm:h-[900px] sm:h-[712px] max-h-screen object-cover object-top min-w-[1024px] z-10 relative"
