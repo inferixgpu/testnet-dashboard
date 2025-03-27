@@ -6,10 +6,20 @@ import { useEffect, useState } from "react";
 
 interface InfoProductProps {
   isInViewport: boolean;
+  onOpenModal: () => void;
+  onOpenModalRent: () => void;
 }
 
-export default function InfoProduct({ isInViewport }: InfoProductProps) {
+export default function InfoProduct({ isInViewport, onOpenModal, onOpenModalRent }: InfoProductProps) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const handleOpenModalInfo = () => {
+    onOpenModal()
+  };
+
+  const handleOpenModalInfoRent = () => {
+    onOpenModalRent()
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,7 +34,7 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
     return (
       <div className={"product"} style={{ overflow: "hidden" }}>
         <div className={"product-container"}>
-          <InfoProductBottom />
+          <InfoProductBottom handleOpenModalInfo={handleOpenModalInfo} handleOpenModalInfoRent={handleOpenModalInfoRent} />
           <InfoProductTop />
         </div>
       </div>
@@ -40,7 +50,7 @@ export default function InfoProduct({ isInViewport }: InfoProductProps) {
           animate={isInViewport ? { x: 0, opacity: 1 } : { x: "-100%", opacity: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <InfoProductBottom />
+          <InfoProductBottom handleOpenModalInfo={handleOpenModalInfo} handleOpenModalInfoRent={handleOpenModalInfoRent} />
         </motion.div>
         <motion.div
           style={{ overflow: "hidden", width: "100%" }}

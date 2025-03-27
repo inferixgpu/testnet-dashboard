@@ -2,14 +2,15 @@ import Image from "next/image";
 import ButtonCustom from "@/components/common/ButtonCustom";
 
 interface GPUMiningProps {
-  handleClickRegister: () => void;
   handleClickDocOne: () => void;
+  handleOpenModal: () => void
 }
 
 const GPUMining = ({
-  handleClickRegister,
   handleClickDocOne,
+  handleOpenModal
 }: GPUMiningProps) => {
+
   const GPUContent = ({
     isMobile,
     imageSrc,
@@ -39,7 +40,7 @@ const GPUMining = ({
         <div className="w-full items-center flex flex-col gap-[16px]">
           <ButtonCustom
             content="Register now"
-            onClick={handleClickRegister}
+            onClick={handleOpenModal}
             isActive
             stylesContent={{
               fontSize: "14px",

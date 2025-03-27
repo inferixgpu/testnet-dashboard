@@ -1,26 +1,30 @@
 import GPUMining from "@/components/info/GPUMining";
 import GPURenting from "@/components/info/GPURenting";
 
-export default function InfoProductBottom() {
-  const handleClickRegister = () => {
-    window.open("https://cloud.inferix.io/", "_blank");
-  };
+interface InfoProductBottom {
+  handleOpenModalInfo: () => void
+  handleOpenModalInfoRent: () => void
+}
 
+export default function InfoProductBottom({ handleOpenModalInfo, handleOpenModalInfoRent }: InfoProductBottom) {
   const handleClickDocOne = () => {
-    window.open("https://docs.inferix.io/inferix-testnet-1/adding-gpus-to-the-network", "_blank");
+    window.open("https://docs.inferix.io/inferix-testnet-2-on-solana-and-iotex-live/adding-gpus-to-the-network/for-gpu-providers", "_blank");
   };
 
   const handleClickDocTwo = () => {
-    window.open("https://docs.inferix.io/inferix-testnet-1/renting-gpu-devices", "_blank");
+    window.open("https://docs.inferix.io/inferix-testnet-2-on-solana-and-iotex-live/renting-gpu-devices", "_blank");
   };
 
   const handleClickRent = () => {
-    window.open("https://cloud.inferix.io/", "_blank");
+    handleOpenModalInfoRent()
+  };
+  const handleOpenModal = () => {
+    handleOpenModalInfo()
   };
 
   return (
     <div className="gap-[8px] w-[100%] flex flex-col lg:flex-row">
-      <GPUMining handleClickRegister={handleClickRegister} handleClickDocOne={handleClickDocOne} />
+      <GPUMining handleClickDocOne={handleClickDocOne} handleOpenModal={handleOpenModal} />
       <GPURenting handleClickRent={handleClickRent} handleClickDocTwo={handleClickDocTwo} />
     </div>
   );
