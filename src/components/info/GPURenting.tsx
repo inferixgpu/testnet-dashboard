@@ -34,7 +34,7 @@ const GPUMining = ({
       />
       <div className={buttonContainerClass}>
         <span className="text-[#F8F8F8F2] font-medium text-[14px] sm:text-[18px] cursor-default text-center">
-        GPU Renting Joining Port
+          GPU Renting Joining Port
         </span>
         <div className="w-full items-center flex flex-col gap-[16px]">
           <ButtonCustom
